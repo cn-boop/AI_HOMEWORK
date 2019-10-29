@@ -1,0 +1,1844 @@
+nohup: 忽略输入
+Setting up a new session...
+Traceback (most recent call last):
+  File "/home/nuo.chen/.conda/envs/torch/lib/python3.7/site-packages/urllib3/connection.py", line 157, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/home/nuo.chen/.conda/envs/torch/lib/python3.7/site-packages/urllib3/util/connection.py", line 84, in create_connection
+    raise err
+  File "/home/nuo.chen/.conda/envs/torch/lib/python3.7/site-packages/urllib3/util/connection.py", line 74, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nuo.chen/.conda/envs/torch/lib/python3.7/site-packages/urllib3/connectionpool.py", line 672, in urlopen
+    chunked=chunked,
+  File "/home/nuo.chen/.conda/envs/torch/lib/python3.7/site-packages/urllib3/connectionpool.py", line 387, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/home/nuo.chen/.conda/envs/torch/lib/python3.7/http/client.py", line 1244, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/home/nuo.chen/.conda/envs/torch/lib/python3.7/http/client.py", line 1290, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/home/nuo.chen/.conda/envs/torch/lib/python3.7/http/client.py", line 1239, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/home/nuo.chen/.conda/envs/torch/lib/python3.7/http/client.py", line 1026, in _send_output
+    self.send(msg)
+  File "/home/nuo.chen/.conda/envs/torch/lib/python3.7/http/client.py", line 966, in send
+    self.connect()
+  File "/home/nuo.chen/.conda/envs/torch/lib/python3.7/site-packages/urllib3/connection.py", line 184, in connect
+    conn = self._new_conn()
+  File "/home/nuo.chen/.conda/envs/torch/lib/python3.7/site-packages/urllib3/connection.py", line 169, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7fb50188f750>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nuo.chen/.conda/envs/torch/lib/python3.7/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/home/nuo.chen/.conda/envs/torch/lib/python3.7/site-packages/urllib3/connectionpool.py", line 720, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/home/nuo.chen/.conda/envs/torch/lib/python3.7/site-packages/urllib3/util/retry.py", line 436, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=8097): Max retries exceeded with url: /env/main (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fb50188f750>: Failed to establish a new connection: [Errno 111] Connection refused'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nuo.chen/.conda/envs/torch/lib/python3.7/site-packages/visdom/__init__.py", line 711, in _send
+    data=json.dumps(msg),
+  File "/home/nuo.chen/.conda/envs/torch/lib/python3.7/site-packages/visdom/__init__.py", line 677, in _handle_post
+    r = self.session.post(url, data=data)
+  File "/home/nuo.chen/.conda/envs/torch/lib/python3.7/site-packages/requests/sessions.py", line 581, in post
+    return self.request('POST', url, data=data, json=json, **kwargs)
+  File "/home/nuo.chen/.conda/envs/torch/lib/python3.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/nuo.chen/.conda/envs/torch/lib/python3.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/nuo.chen/.conda/envs/torch/lib/python3.7/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=8097): Max retries exceeded with url: /env/main (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fb50188f750>: Failed to establish a new connection: [Errno 111] Connection refused'))
+[Errno 111] Connection refused
+Exception in user code:
+------------------------------------------------------------
+Files already downloaded and verified
+Files already downloaded and verified
+i can use gpu
+epoch: 200, loss: 1.779
+Exception in user code:
+------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/nuo.chen/.conda/envs/torch/lib/python3.7/site-packages/urllib3/connection.py", line 157, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/home/nuo.chen/.conda/envs/torch/lib/python3.7/site-packages/urllib3/util/connection.py", line 84, in create_connection
+    raise err
+  File "/home/nuo.chen/.conda/envs/torch/lib/python3.7/site-packages/urllib3/util/connection.py", line 74, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nuo.chen/.conda/envs/torch/lib/python3.7/site-packages/urllib3/connectionpool.py", line 672, in urlopen
+    chunked=chunked,
+  File "/home/nuo.chen/.conda/envs/torch/lib/python3.7/site-packages/urllib3/connectionpool.py", line 387, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/home/nuo.chen/.conda/envs/torch/lib/python3.7/http/client.py", line 1244, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/home/nuo.chen/.conda/envs/torch/lib/python3.7/http/client.py", line 1290, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/home/nuo.chen/.conda/envs/torch/lib/python3.7/http/client.py", line 1239, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/home/nuo.chen/.conda/envs/torch/lib/python3.7/http/client.py", line 1026, in _send_output
+    self.send(msg)
+  File "/home/nuo.chen/.conda/envs/torch/lib/python3.7/http/client.py", line 966, in send
+    self.connect()
+  File "/home/nuo.chen/.conda/envs/torch/lib/python3.7/site-packages/urllib3/connection.py", line 184, in connect
+    conn = self._new_conn()
+  File "/home/nuo.chen/.conda/envs/torch/lib/python3.7/site-packages/urllib3/connection.py", line 169, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7fb4a0665a10>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nuo.chen/.conda/envs/torch/lib/python3.7/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/home/nuo.chen/.conda/envs/torch/lib/python3.7/site-packages/urllib3/connectionpool.py", line 720, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/home/nuo.chen/.conda/envs/torch/lib/python3.7/site-packages/urllib3/util/retry.py", line 436, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=8097): Max retries exceeded with url: /update (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fb4a0665a10>: Failed to establish a new connection: [Errno 111] Connection refused'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nuo.chen/.conda/envs/torch/lib/python3.7/site-packages/visdom/__init__.py", line 711, in _send
+    data=json.dumps(msg),
+  File "/home/nuo.chen/.conda/envs/torch/lib/python3.7/site-packages/visdom/__init__.py", line 677, in _handle_post
+    r = self.session.post(url, data=data)
+  File "/home/nuo.chen/.conda/envs/torch/lib/python3.7/site-packages/requests/sessions.py", line 581, in post
+    return self.request('POST', url, data=data, json=json, **kwargs)
+  File "/home/nuo.chen/.conda/envs/torch/lib/python3.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/nuo.chen/.conda/envs/torch/lib/python3.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/nuo.chen/.conda/envs/torch/lib/python3.7/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=8097): Max retries exceeded with url: /update (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fb4a0665a10>: Failed to establish a new connection: [Errno 111] Connection refused'))
+Traceback (most recent call last):
+  File "/home/nuo.chen/.conda/envs/torch/lib/python3.7/site-packages/urllib3/connection.py", line 157, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/home/nuo.chen/.conda/envs/torch/lib/python3.7/site-packages/urllib3/util/connection.py", line 84, in create_connection
+    raise err
+  File "/home/nuo.chen/.conda/envs/torch/lib/python3.7/site-packages/urllib3/util/connection.py", line 74, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nuo.chen/.conda/envs/torch/lib/python3.7/site-packages/urllib3/connectionpool.py", line 672, in urlopen
+    chunked=chunked,
+  File "/home/nuo.chen/.conda/envs/torch/lib/python3.7/site-packages/urllib3/connectionpool.py", line 387, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/home/nuo.chen/.conda/envs/torch/lib/python3.7/http/client.py", line 1244, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/home/nuo.chen/.conda/envs/torch/lib/python3.7/http/client.py", line 1290, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/home/nuo.chen/.conda/envs/torch/lib/python3.7/http/client.py", line 1239, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/home/nuo.chen/.conda/envs/torch/lib/python3.7/http/client.py", line 1026, in _send_output
+    self.send(msg)
+  File "/home/nuo.chen/.conda/envs/torch/lib/python3.7/http/client.py", line 966, in send
+    self.connect()
+  File "/home/nuo.chen/.conda/envs/torch/lib/python3.7/site-packages/urllib3/connection.py", line 184, in connect
+    conn = self._new_conn()
+  File "/home/nuo.chen/.conda/envs/torch/lib/python3.7/site-packages/urllib3/connection.py", line 169, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7fb44f40f8d0>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nuo.chen/.conda/envs/torch/lib/python3.7/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/home/nuo.chen/.conda/envs/torch/lib/python3.7/site-packages/urllib3/connectionpool.py", line 720, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/home/nuo.chen/.conda/envs/torch/lib/python3.7/site-packages/urllib3/util/retry.py", line 436, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=8097): Max retries exceeded with url: /update (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fb44f40f8d0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nuo.chen/.conda/envs/torch/lib/python3.7/site-packages/visdom/__init__.py", line 711, in _send
+    data=json.dumps(msg),
+  File "/home/nuo.chen/.conda/envs/torch/lib/python3.7/site-packages/visdom/__init__.py", line 677, in _handle_post
+    r = self.session.post(url, data=data)
+  File "/home/nuo.chen/.conda/envs/torch/lib/python3.7/site-packages/requests/sessions.py", line 581, in post
+    return self.request('POST', url, data=data, json=json, **kwargs)
+  File "/home/nuo.chen/.conda/envs/torch/lib/python3.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/nuo.chen/.conda/envs/torch/lib/python3.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/nuo.chen/.conda/envs/torch/lib/python3.7/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=8097): Max retries exceeded with url: /update (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fb44f40f8d0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+Traceback (most recent call last):
+  File "/home/nuo.chen/.conda/envs/torch/lib/python3.7/site-packages/urllib3/connection.py", line 157, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/home/nuo.chen/.conda/envs/torch/lib/python3.7/site-packages/urllib3/util/connection.py", line 84, in create_connection
+    raise err
+  File "/home/nuo.chen/.conda/envs/torch/lib/python3.7/site-packages/urllib3/util/connection.py", line 74, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nuo.chen/.conda/envs/torch/lib/python3.7/site-packages/urllib3/connectionpool.py", line 672, in urlopen
+    chunked=chunked,
+  File "/home/nuo.chen/.conda/envs/torch/lib/python3.7/site-packages/urllib3/connectionpool.py", line 387, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/home/nuo.chen/.conda/envs/torch/lib/python3.7/http/client.py", line 1244, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/home/nuo.chen/.conda/envs/torch/lib/python3.7/http/client.py", line 1290, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/home/nuo.chen/.conda/envs/torch/lib/python3.7/http/client.py", line 1239, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/home/nuo.chen/.conda/envs/torch/lib/python3.7/http/client.py", line 1026, in _send_output
+    self.send(msg)
+  File "/home/nuo.chen/.conda/envs/torch/lib/python3.7/http/client.py", line 966, in send
+    self.connect()
+  File "/home/nuo.chen/.conda/envs/torch/lib/python3.7/site-packages/urllib3/connection.py", line 184, in connect
+    conn = self._new_conn()
+  File "/home/nuo.chen/.conda/envs/torch/lib/python3.7/site-packages/urllib3/connection.py", line 169, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7fb4a0665f10>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nuo.chen/.conda/envs/torch/lib/python3.7/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/home/nuo.chen/.conda/envs/torch/lib/python3.7/site-packages/urllib3/connectionpool.py", line 720, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/home/nuo.chen/.conda/envs/torch/lib/python3.7/site-packages/urllib3/util/retry.py", line 436, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=8097): Max retries exceeded with url: /update (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fb4a0665f10>: Failed to establish a new connection: [Errno 111] Connection refused'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nuo.chen/.conda/envs/torch/lib/python3.7/site-packages/visdom/__init__.py", line 711, in _send
+    data=json.dumps(msg),
+  File "/home/nuo.chen/.conda/envs/torch/lib/python3.7/site-packages/visdom/__init__.py", line 677, in _handle_post
+    r = self.session.post(url, data=data)
+  File "/home/nuo.chen/.conda/envs/torch/lib/python3.7/site-packages/requests/sessions.py", line 581, in post
+    return self.request('POST', url, data=data, json=json, **kwargs)
+  File "/home/nuo.chen/.conda/envs/torch/lib/python3.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/nuo.chen/.conda/envs/torch/lib/python3.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+Exception in user code:
+------------------------------------------------------------
+Total Loss: 1.72804008, Acc: 0.36250000
+epoch: 300, loss: 1.936
+Exception in user code:
+------------------------------------------------------------
+  File "/home/nuo.chen/.conda/envs/torch/lib/python3.7/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=8097): Max retries exceeded with url: /update (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fb4a0665f10>: Failed to establish a new connection: [Errno 111] Connection refused'))
+Total Loss: 1.72889150, Acc: 0.36680000
+epoch: 400, loss: 1.717
+Total Loss: 1.69024880, Acc: 0.36200000
+epoch: 500, loss: 1.691
+Total Loss: 1.50641268, Acc: 0.44260000
+epoch: 600, loss: 1.706
+Total Loss: 1.51529548, Acc: 0.42450000
+epoch: 700, loss: 1.456
+Total Loss: 1.44262422, Acc: 0.46450000
+epoch: 800, loss: 1.108
+Total Loss: 1.44770561, Acc: 0.46370000
+epoch: 900, loss: 1.513
+Total Loss: 1.40566457, Acc: 0.47590000
+epoch: 1000, loss: 1.35
+Total Loss: 1.35284475, Acc: 0.49760000
+epoch: 1100, loss: 1.234
+Total Loss: 1.28334168, Acc: 0.53520000
+epoch: 1200, loss: 1.446
+Total Loss: 1.20070100, Acc: 0.56470000
+epoch: 1300, loss: 1.267
+Total Loss: 1.24120143, Acc: 0.54170000
+epoch: 1400, loss: 1.587
+Total Loss: 1.24171819, Acc: 0.55490000
+epoch: 1500, loss: 1.248
+Total Loss: 1.20376768, Acc: 0.56700000
+epoch: 1600, loss: 0.7632
+Total Loss: 1.20031382, Acc: 0.57910000
+epoch: 1700, loss: 0.9981
+Total Loss: 1.16361587, Acc: 0.57360000
+epoch: 1800, loss: 0.8556
+Total Loss: 1.10480147, Acc: 0.60740000
+epoch: 1900, loss: 0.8673
+Total Loss: 1.02934255, Acc: 0.62120000
+epoch: 2000, loss: 0.8498
+Total Loss: 1.06023485, Acc: 0.61800000
+epoch: 2100, loss: 0.9809
+Total Loss: 0.97319273, Acc: 0.65130000
+epoch: 2200, loss: 0.879
+Total Loss: 1.00255134, Acc: 0.64390000
+epoch: 2300, loss: 0.7681
+Total Loss: 0.90951526, Acc: 0.67340000
+epoch: 2400, loss: 0.8062
+Total Loss: 0.96863067, Acc: 0.65270000
+epoch: 2500, loss: 0.7525
+Total Loss: 0.87385670, Acc: 0.68440000
+epoch: 2600, loss: 0.7484
+Total Loss: 0.87534729, Acc: 0.68690000
+epoch: 2700, loss: 0.9234
+Total Loss: 0.87410556, Acc: 0.68850000
+epoch: 2800, loss: 1.009
+Total Loss: 0.82788565, Acc: 0.70580000
+epoch: 2900, loss: 0.647
+Total Loss: 0.83459491, Acc: 0.70080000
+epoch: 3000, loss: 0.9129
+Total Loss: 0.88347788, Acc: 0.69140000
+epoch: 3100, loss: 0.965
+Total Loss: 0.84439909, Acc: 0.70040000
+epoch: 3200, loss: 0.6741
+Total Loss: 0.80573607, Acc: 0.71830000
+epoch: 3300, loss: 0.8074
+Total Loss: 0.84585283, Acc: 0.69840000
+epoch: 3400, loss: 0.5825
+Total Loss: 0.78598902, Acc: 0.72570000
+epoch: 3500, loss: 0.7228
+Total Loss: 0.81128595, Acc: 0.71640000
+epoch: 3600, loss: 0.6975
+Total Loss: 0.77690393, Acc: 0.72420000
+epoch: 3700, loss: 0.8132
+Total Loss: 0.80584839, Acc: 0.72550000
+epoch: 3800, loss: 0.5798
+Total Loss: 0.78612043, Acc: 0.72600000
+epoch: 3900, loss: 0.9199
+Total Loss: 0.66808943, Acc: 0.76670000
+epoch: 4000, loss: 0.842
+Total Loss: 0.72707433, Acc: 0.74850000
+epoch: 4100, loss: 0.4777
+Total Loss: 0.77177313, Acc: 0.72010000
+epoch: 4200, loss: 0.6096
+Total Loss: 0.66427795, Acc: 0.77030000
+epoch: 4300, loss: 0.6998
+Total Loss: 0.68355800, Acc: 0.75650000
+epoch: 4400, loss: 0.9041
+Total Loss: 0.67582089, Acc: 0.76320000
+epoch: 4500, loss: 0.7782
+Total Loss: 0.67947358, Acc: 0.76150000
+epoch: 4600, loss: 0.4464
+Total Loss: 0.62400944, Acc: 0.78160000
+epoch: 4700, loss: 0.717
+Total Loss: 0.71798673, Acc: 0.75410000
+epoch: 4800, loss: 0.3899
+Total Loss: 0.67533313, Acc: 0.76290000
+epoch: 4900, loss: 0.6588
+Total Loss: 0.65807406, Acc: 0.76840000
+epoch: 5000, loss: 0.5816
+Total Loss: 0.63394860, Acc: 0.78180000
+epoch: 5100, loss: 0.5674
+Total Loss: 0.66717919, Acc: 0.76550000
+epoch: 5200, loss: 0.5517
+Total Loss: 0.64353040, Acc: 0.77930000
+epoch: 5300, loss: 0.3768
+Total Loss: 0.62419859, Acc: 0.78510000
+epoch: 5400, loss: 0.4677
+Total Loss: 0.58480566, Acc: 0.79510000
+epoch: 5500, loss: 0.6409
+Total Loss: 0.59758854, Acc: 0.79470000
+epoch: 5600, loss: 0.7126
+Total Loss: 0.67680549, Acc: 0.76740000
+epoch: 5700, loss: 0.3323
+Total Loss: 0.52906386, Acc: 0.81610000
+epoch: 5800, loss: 0.4335
+Total Loss: 0.56076020, Acc: 0.81090000
+epoch: 5900, loss: 0.5347
+Total Loss: 0.59955571, Acc: 0.79360000
+epoch: 6000, loss: 0.3545
+Total Loss: 0.57171595, Acc: 0.80480000
+epoch: 6100, loss: 0.5464
+Total Loss: 0.60865328, Acc: 0.79000000
+epoch: 6200, loss: 0.4576
+Total Loss: 0.56531538, Acc: 0.80700000
+epoch: 6300, loss: 0.2401
+Total Loss: 0.58621445, Acc: 0.79550000
+epoch: 6400, loss: 0.3324
+Total Loss: 0.53227073, Acc: 0.81550000
+epoch: 6500, loss: 0.4061
+Total Loss: 0.55499943, Acc: 0.80960000
+epoch: 6600, loss: 0.3608
+Total Loss: 0.58382047, Acc: 0.80470000
+epoch: 6700, loss: 0.4175
+Total Loss: 0.56803621, Acc: 0.80980000
+epoch: 6800, loss: 0.5822
+Total Loss: 0.54983488, Acc: 0.81020000
+epoch: 6900, loss: 0.4055
+Total Loss: 0.50754371, Acc: 0.82630000
+epoch: 7000, loss: 0.4193
+Total Loss: 0.55211401, Acc: 0.81770000
+epoch: 7100, loss: 0.6437
+Total Loss: 0.54638864, Acc: 0.81920000
+epoch: 7200, loss: 0.2276
+Total Loss: 0.55710617, Acc: 0.80810000
+epoch: 7300, loss: 0.4488
+Total Loss: 0.56669254, Acc: 0.82050000
+epoch: 7400, loss: 0.1995
+Total Loss: 0.51247285, Acc: 0.83030000
+epoch: 7500, loss: 0.4176
+Total Loss: 0.51933690, Acc: 0.83000000
+epoch: 7600, loss: 0.3714
+Total Loss: 0.52676542, Acc: 0.82280000
+epoch: 7700, loss: 0.2369
+Total Loss: 0.52231727, Acc: 0.82070000
+epoch: 7800, loss: 0.5305
+Total Loss: 0.57416553, Acc: 0.80770000
+epoch: 7900, loss: 0.5436
+Total Loss: 0.50333739, Acc: 0.83520000
+epoch: 8000, loss: 0.3412
+Total Loss: 0.57467090, Acc: 0.81800000
+epoch: 8100, loss: 0.3392
+Total Loss: 0.51825089, Acc: 0.83050000
+epoch: 8200, loss: 0.3007
+Total Loss: 0.49095791, Acc: 0.83580000
+epoch: 8300, loss: 0.3962
+Total Loss: 0.48181582, Acc: 0.84290000
+epoch: 8400, loss: 0.266
+Total Loss: 0.54303028, Acc: 0.82670000
+epoch: 8500, loss: 0.3728
+Total Loss: 0.48778908, Acc: 0.83650000
+epoch: 8600, loss: 0.3728
+Total Loss: 0.51533899, Acc: 0.83110000
+epoch: 8700, loss: 0.3021
+Total Loss: 0.51639284, Acc: 0.82620000
+epoch: 8800, loss: 0.1458
+Total Loss: 0.50328499, Acc: 0.83650000
+epoch: 8900, loss: 0.2035
+Total Loss: 0.54257645, Acc: 0.82920000
+epoch: 9000, loss: 0.4968
+Total Loss: 0.50924718, Acc: 0.83350000
+epoch: 9100, loss: 0.2309
+Total Loss: 0.63816720, Acc: 0.81630000
+epoch: 9200, loss: 0.1385
+Total Loss: 0.55884077, Acc: 0.83040000
+epoch: 9300, loss: 0.3696
+Total Loss: 0.53709946, Acc: 0.82950000
+epoch: 9400, loss: 0.2521
+Total Loss: 0.55170115, Acc: 0.81810000
+epoch: 9500, loss: 0.4841
+Total Loss: 0.54109986, Acc: 0.81900000
+epoch: 9600, loss: 0.3135
+Total Loss: 0.53360002, Acc: 0.83810000
+epoch: 9700, loss: 0.2624
+Total Loss: 0.60740407, Acc: 0.81540000
+epoch: 9800, loss: 0.2255
+Total Loss: 0.50602798, Acc: 0.84150000
+epoch: 9900, loss: 0.1524
+Total Loss: 0.54500780, Acc: 0.83280000
+epoch: 10000, loss: 0.277
+Total Loss: 0.62173454, Acc: 0.80890000
+epoch: 10100, loss: 0.3263
+Total Loss: 0.67268584, Acc: 0.78720000
+epoch: 10200, loss: 0.09869
+Total Loss: 0.49938499, Acc: 0.83950000
+epoch: 10300, loss: 0.3037
+Total Loss: 0.53531096, Acc: 0.83650000
+epoch: 10400, loss: 0.08454
+Total Loss: 0.51614612, Acc: 0.84810000
+epoch: 10500, loss: 0.2157
+Total Loss: 0.51142190, Acc: 0.84860000
+epoch: 10600, loss: 0.03638
+Total Loss: 0.49799150, Acc: 0.85160000
+epoch: 10700, loss: 0.1425
+Total Loss: 0.59800726, Acc: 0.83100000
+epoch: 10800, loss: 0.1773
+Total Loss: 0.50847551, Acc: 0.84260000
+epoch: 10900, loss: 0.171
+Total Loss: 0.59066770, Acc: 0.83570000
+epoch: 11000, loss: 0.1072
+Total Loss: 0.55231841, Acc: 0.83910000
+epoch: 11100, loss: 0.06724
+Total Loss: 0.50221412, Acc: 0.85340000
+epoch: 11200, loss: 0.0706
+Total Loss: 0.60281527, Acc: 0.83100000
+epoch: 11300, loss: 0.05721
+Total Loss: 0.53055529, Acc: 0.85330000
+epoch: 11400, loss: 0.1335
+Total Loss: 0.53095787, Acc: 0.84290000
+epoch: 11500, loss: 0.1999
+Total Loss: 0.56472042, Acc: 0.84130000
+epoch: 11600, loss: 0.1137
+Total Loss: 0.55477721, Acc: 0.84680000
+epoch: 11700, loss: 0.1851
+Total Loss: 0.47788679, Acc: 0.85090000
+epoch: 11800, loss: 0.2362
+Total Loss: 0.57101560, Acc: 0.84010000
+epoch: 11900, loss: 0.183
+Total Loss: 0.49976826, Acc: 0.84500000
+epoch: 12000, loss: 0.1441
+Total Loss: 0.51179570, Acc: 0.85420000
+epoch: 12100, loss: 0.1213
+Total Loss: 0.56251831, Acc: 0.83620000
+epoch: 12200, loss: 0.0802
+Total Loss: 0.58173733, Acc: 0.84460000
+epoch: 12300, loss: 0.1204
+Total Loss: 0.50848430, Acc: 0.85030000
+epoch: 12400, loss: 0.2049
+Total Loss: 0.53334193, Acc: 0.84070000
+epoch: 12500, loss: 0.04588
+Total Loss: 0.50693458, Acc: 0.84980000
+epoch: 12600, loss: 0.08489
+Total Loss: 0.56399021, Acc: 0.82790000
+epoch: 12700, loss: 0.1401
+Total Loss: 0.54627395, Acc: 0.85110000
+epoch: 12800, loss: 0.1644
+Total Loss: 0.54717900, Acc: 0.85880000
+epoch: 12900, loss: 0.2209
+Total Loss: 0.55025490, Acc: 0.84440000
+epoch: 13000, loss: 0.03839
+Total Loss: 0.60429483, Acc: 0.83720000
+epoch: 13100, loss: 0.144
+Total Loss: 0.54179949, Acc: 0.84920000
+epoch: 13200, loss: 0.1572
+Total Loss: 0.62422588, Acc: 0.83580000
+epoch: 13300, loss: 0.2865
+Total Loss: 0.57349574, Acc: 0.83600000
+epoch: 13400, loss: 0.1553
+Total Loss: 0.56973056, Acc: 0.84610000
+epoch: 13500, loss: 0.1697
+Total Loss: 0.54014796, Acc: 0.84410000
+epoch: 13600, loss: 0.08945
+Total Loss: 0.56543024, Acc: 0.85600000
+epoch: 13700, loss: 0.08128
+Total Loss: 0.59371947, Acc: 0.84090000
+epoch: 13800, loss: 0.126
+Total Loss: 0.53758399, Acc: 0.85390000
+epoch: 13900, loss: 0.1755
+Total Loss: 0.57934056, Acc: 0.84700000
+epoch: 14000, loss: 0.04346
+Total Loss: 0.53347250, Acc: 0.85400000
+epoch: 14100, loss: 0.08274
+Total Loss: 0.61598921, Acc: 0.84250000
+epoch: 14200, loss: 0.04596
+Total Loss: 0.61848057, Acc: 0.84450000
+epoch: 14300, loss: 0.2408
+Total Loss: 0.57359428, Acc: 0.85350000
+epoch: 14400, loss: 0.04185
+Total Loss: 0.65759590, Acc: 0.84940000
+epoch: 14500, loss: 0.09787
+Total Loss: 0.63549554, Acc: 0.84600000
+epoch: 14600, loss: 0.1274
+Total Loss: 0.64649655, Acc: 0.83450000
+epoch: 14700, loss: 0.1769
+Total Loss: 0.62431331, Acc: 0.84420000
+epoch: 14800, loss: 0.04862
+Total Loss: 0.56377080, Acc: 0.85760000
+epoch: 14900, loss: 0.1376
+Total Loss: 0.64274485, Acc: 0.84520000
+epoch: 15000, loss: 0.07934
+Total Loss: 0.59371524, Acc: 0.85870000
+epoch: 15100, loss: 0.07306
+Total Loss: 0.63572516, Acc: 0.85010000
+epoch: 15200, loss: 0.03513
+Total Loss: 0.64194187, Acc: 0.84800000
+epoch: 15300, loss: 0.2673
+Total Loss: 0.59425394, Acc: 0.84920000
+epoch: 15400, loss: 0.1401
+Total Loss: 0.60202187, Acc: 0.85370000
+epoch: 15500, loss: 0.05801
+Total Loss: 0.60651076, Acc: 0.85390000
+epoch: 15600, loss: 0.09845
+Total Loss: 0.59995557, Acc: 0.85720000
+epoch: 15700, loss: 0.2014
+Total Loss: 0.61613348, Acc: 0.85250000
+epoch: 15800, loss: 0.03346
+Total Loss: 0.69991867, Acc: 0.85290000
+epoch: 15900, loss: 0.08573
+Total Loss: 0.68393486, Acc: 0.84440000
+epoch: 16000, loss: 0.1069
+Total Loss: 0.63202218, Acc: 0.85960000
+epoch: 16100, loss: 0.05834
+Total Loss: 0.57248771, Acc: 0.85070000
+epoch: 16200, loss: 0.0342
+Total Loss: 0.61557809, Acc: 0.85760000
+epoch: 16300, loss: 0.05076
+Total Loss: 0.60449604, Acc: 0.85510000
+epoch: 16400, loss: 0.02867
+Total Loss: 0.51779953, Acc: 0.85730000
+epoch: 16500, loss: 0.1208
+Total Loss: 0.65680497, Acc: 0.84440000
+epoch: 16600, loss: 0.03595
+Total Loss: 0.61939861, Acc: 0.85740000
+epoch: 16700, loss: 0.01565
+Total Loss: 0.61643109, Acc: 0.86060000
+epoch: 16800, loss: 0.1689
+Total Loss: 0.63499849, Acc: 0.85250000
+epoch: 16900, loss: 0.03905
+Total Loss: 0.62204633, Acc: 0.85240000
+epoch: 17000, loss: 0.09815
+Total Loss: 0.54247113, Acc: 0.85960000
+epoch: 17100, loss: 0.06869
+Total Loss: 0.60604749, Acc: 0.85640000
+epoch: 17200, loss: 0.099
+Total Loss: 0.62657582, Acc: 0.85630000
+epoch: 17300, loss: 0.06054
+Total Loss: 0.58215312, Acc: 0.84730000
+epoch: 17400, loss: 0.04367
+Total Loss: 0.61755597, Acc: 0.85660000
+epoch: 17500, loss: 0.01455
+Total Loss: 0.66120270, Acc: 0.85660000
+epoch: 17600, loss: 0.02185
+Total Loss: 0.55246082, Acc: 0.86060000
+epoch: 17700, loss: 0.1447
+Total Loss: 0.58131990, Acc: 0.86510000
+epoch: 17800, loss: 0.1025
+Total Loss: 0.64641869, Acc: 0.84550000
+epoch: 17900, loss: 0.07293
+Total Loss: 0.62822225, Acc: 0.85910000
+epoch: 18000, loss: 0.02593
+Total Loss: 0.62514618, Acc: 0.85760000
+epoch: 18100, loss: 0.05909
+Total Loss: 0.62135578, Acc: 0.85810000
+epoch: 18200, loss: 0.07207
+Total Loss: 0.60865297, Acc: 0.86130000
+epoch: 18300, loss: 0.09413
+Total Loss: 0.62569761, Acc: 0.86290000
+epoch: 18400, loss: 0.03395
+Total Loss: 0.61930006, Acc: 0.85600000
+epoch: 18500, loss: 0.09711
+Total Loss: 0.72758997, Acc: 0.83310000
+epoch: 18600, loss: 0.03585
+Total Loss: 0.62848229, Acc: 0.85750000
+epoch: 18700, loss: 0.03314
+Total Loss: 0.59078497, Acc: 0.85250000
+epoch: 18800, loss: 0.01142
+Total Loss: 0.63942696, Acc: 0.85690000
+epoch: 18900, loss: 0.06593
+Total Loss: 0.61096105, Acc: 0.86170000
+epoch: 19000, loss: 0.05159
+Total Loss: 0.70375391, Acc: 0.84940000
+epoch: 19100, loss: 0.0398
+Total Loss: 0.67974721, Acc: 0.85380000
+epoch: 19200, loss: 0.02297
+Total Loss: 0.62940561, Acc: 0.85950000
+epoch: 19300, loss: 0.01355
+Total Loss: 0.64063547, Acc: 0.86180000
+epoch: 19400, loss: 0.02955
+Total Loss: 0.67133664, Acc: 0.85490000
+epoch: 19500, loss: 0.1466
+Total Loss: 0.66068709, Acc: 0.85310000
+epoch: 19600, loss: 0.05142
+Total Loss: 0.66906993, Acc: 0.85220000
+epoch: 19700, loss: 0.08974
+Total Loss: 0.65647728, Acc: 0.85860000
+epoch: 19800, loss: 0.05174
+Total Loss: 0.64497727, Acc: 0.86110000
+epoch: 19900, loss: 0.08979
+Total Loss: 0.68980460, Acc: 0.84710000
+epoch: 20000, loss: 0.01067
+Total Loss: 0.65988458, Acc: 0.85770000
+epoch: 20100, loss: 0.1469
+Total Loss: 0.66851271, Acc: 0.85940000
+epoch: 20200, loss: 0.07898
+Total Loss: 0.65778303, Acc: 0.85200000
+epoch: 20300, loss: 0.08878
+Total Loss: 0.69847822, Acc: 0.84840000
+epoch: 20400, loss: 0.03094
+Total Loss: 0.63564297, Acc: 0.86110000
+epoch: 20500, loss: 0.0548
+Total Loss: 0.74141211, Acc: 0.85110000
+epoch: 20600, loss: 0.01564
+Total Loss: 0.64117364, Acc: 0.85830000
+epoch: 20700, loss: 0.002087
+Total Loss: 0.70397682, Acc: 0.86070000
+epoch: 20800, loss: 0.01218
+Total Loss: 0.76723380, Acc: 0.85790000
+epoch: 20900, loss: 0.01248
+Total Loss: 0.66752699, Acc: 0.85550000
+epoch: 21000, loss: 0.01987
+Total Loss: 0.70427603, Acc: 0.84940000
+epoch: 21100, loss: 0.1127
+Total Loss: 0.74005353, Acc: 0.84650000
+epoch: 21200, loss: 0.01414
+Total Loss: 0.61634657, Acc: 0.84990000
+epoch: 21300, loss: 0.02841
+Total Loss: 0.69562890, Acc: 0.85910000
+epoch: 21400, loss: 0.0219
+Total Loss: 0.75688709, Acc: 0.85510000
+epoch: 21500, loss: 0.01034
+Total Loss: 0.65547979, Acc: 0.86230000
+epoch: 21600, loss: 0.02167
+Total Loss: 0.78778873, Acc: 0.85140000
+epoch: 21700, loss: 0.03972
+Total Loss: 0.68227978, Acc: 0.86390000
+epoch: 21800, loss: 0.005174
+Total Loss: 0.74720040, Acc: 0.85340000
+epoch: 21900, loss: 0.02013
+Total Loss: 0.67288543, Acc: 0.85950000
+epoch: 22000, loss: 0.02682
+Total Loss: 0.74356179, Acc: 0.85200000
+epoch: 22100, loss: 0.04405
+Total Loss: 0.67322040, Acc: 0.85420000
+epoch: 22200, loss: 0.01472
+Total Loss: 0.73126311, Acc: 0.84940000
+epoch: 22300, loss: 0.08998
+Total Loss: 0.67459490, Acc: 0.86080000
+epoch: 22400, loss: 0.008633
+Total Loss: 0.69809611, Acc: 0.86480000
+epoch: 22500, loss: 0.02061
+Total Loss: 0.75700758, Acc: 0.86160000
+epoch: 22600, loss: 0.03622
+Total Loss: 0.74682984, Acc: 0.85610000
+epoch: 22700, loss: 0.009968
+Total Loss: 0.64432925, Acc: 0.86130000
+epoch: 22800, loss: 0.007378
+Total Loss: 0.76791974, Acc: 0.86120000
+epoch: 22900, loss: 0.02823
+Total Loss: 0.68565550, Acc: 0.87170000
+epoch: 23000, loss: 0.1047
+Total Loss: 0.72814422, Acc: 0.85620000
+epoch: 23100, loss: 0.06022
+Total Loss: 0.65962131, Acc: 0.86460000
+epoch: 23200, loss: 0.00213
+Total Loss: 0.71897503, Acc: 0.86100000
+epoch: 23300, loss: 0.03494
+Total Loss: 0.67294743, Acc: 0.86650000
+epoch: 23400, loss: 0.05156
+Total Loss: 0.75534664, Acc: 0.85650000
+epoch: 23500, loss: 0.003893
+Total Loss: 0.73085802, Acc: 0.85930000
+epoch: 23600, loss: 0.008076
+Total Loss: 0.90160883, Acc: 0.85390000
+epoch: 23700, loss: 0.04497
+Total Loss: 0.82104327, Acc: 0.85120000
+epoch: 23800, loss: 0.001269
+Total Loss: 0.75676639, Acc: 0.86060000
+epoch: 23900, loss: 0.04101
+Total Loss: 0.69920725, Acc: 0.86150000
+epoch: 24000, loss: 0.1413
+Total Loss: 0.74573663, Acc: 0.85460000
+epoch: 24100, loss: 0.003173
+Total Loss: 0.69078404, Acc: 0.86490000
+epoch: 24200, loss: 0.1494
+Total Loss: 0.80429950, Acc: 0.85660000
+epoch: 24300, loss: 0.04125
+Total Loss: 0.75225729, Acc: 0.83870000
+epoch: 24400, loss: 0.01347
+Total Loss: 0.69171892, Acc: 0.86040000
+epoch: 24500, loss: 0.03964
+Total Loss: 0.74108147, Acc: 0.86190000
+epoch: 24600, loss: 0.04953
+Total Loss: 0.60135631, Acc: 0.86230000
+epoch: 24700, loss: 0.06762
+Total Loss: 0.69473223, Acc: 0.85260000
+epoch: 24800, loss: 0.03876
+Total Loss: 0.66693788, Acc: 0.87160000
+epoch: 24900, loss: 0.02102
+Total Loss: 0.75691299, Acc: 0.86220000
+epoch: 25000, loss: 0.0165
+Total Loss: 0.70094820, Acc: 0.86100000
+epoch: 25100, loss: 0.01853
+Total Loss: 0.75260509, Acc: 0.85630000
+epoch: 25200, loss: 0.02409
+Total Loss: 0.69153051, Acc: 0.85580000
+epoch: 25300, loss: 0.002725
+Total Loss: 0.83579684, Acc: 0.85390000
+epoch: 25400, loss: 0.009197
+Total Loss: 0.78320497, Acc: 0.84800000
+epoch: 25500, loss: 0.036
+Total Loss: 0.73113115, Acc: 0.85860000
+epoch: 25600, loss: 0.008777
+Total Loss: 0.66660415, Acc: 0.85690000
+epoch: 25700, loss: 0.174
+Total Loss: 0.67715269, Acc: 0.86050000
+epoch: 25800, loss: 0.0556
+Total Loss: 0.73719135, Acc: 0.86310000
+epoch: 25900, loss: 0.004285
+Total Loss: 0.75876222, Acc: 0.85990000
+epoch: 26000, loss: 0.001663
+Total Loss: 0.73148986, Acc: 0.86500000
+epoch: 26100, loss: 0.04746
+Total Loss: 0.80470771, Acc: 0.85900000
+epoch: 26200, loss: 0.07587
+Total Loss: 0.76627559, Acc: 0.86000000
+epoch: 26300, loss: 0.01747
+Total Loss: 0.89265142, Acc: 0.84890000
+epoch: 26400, loss: 0.004233
+Total Loss: 0.69434230, Acc: 0.86450000
+epoch: 26500, loss: 0.01048
+Total Loss: 0.82564326, Acc: 0.85710000
+epoch: 26600, loss: 0.01093
+Total Loss: 0.69825617, Acc: 0.85850000
+epoch: 26700, loss: 0.007955
+Total Loss: 0.71389920, Acc: 0.86340000
+epoch: 26800, loss: 0.02
+Total Loss: 0.79406085, Acc: 0.86370000
+epoch: 26900, loss: 0.008145
+Total Loss: 0.81619335, Acc: 0.84990000
+epoch: 27000, loss: 0.07334
+Total Loss: 0.69935393, Acc: 0.86240000
+epoch: 27100, loss: 0.01555
+Total Loss: 0.70946321, Acc: 0.86390000
+epoch: 27200, loss: 0.001463
+Total Loss: 0.72636541, Acc: 0.85440000
+epoch: 27300, loss: 0.02389
+Total Loss: 0.73940792, Acc: 0.86380000
+epoch: 27400, loss: 0.00236
+Total Loss: 0.71035739, Acc: 0.86810000
+epoch: 27500, loss: 0.001634
+Total Loss: 0.70434121, Acc: 0.87030000
+epoch: 27600, loss: 0.05232
+Total Loss: 0.87480701, Acc: 0.85900000
+epoch: 27700, loss: 0.02732
+Total Loss: 0.84305595, Acc: 0.84680000
+epoch: 27800, loss: 0.0005134
+Total Loss: 0.84990826, Acc: 0.85140000
+epoch: 27900, loss: 0.01271
+Total Loss: 0.68841527, Acc: 0.85330000
+epoch: 28000, loss: 0.01143
+Total Loss: 0.76746025, Acc: 0.85910000
+epoch: 28100, loss: 0.1066
+Total Loss: 0.74620178, Acc: 0.85390000
+epoch: 28200, loss: 0.007218
+Total Loss: 0.72560721, Acc: 0.87000000
+epoch: 28300, loss: 0.005185
+Total Loss: 0.75879099, Acc: 0.86050000
+epoch: 28400, loss: 0.003223
+Total Loss: 0.79238744, Acc: 0.86700000
+epoch: 28500, loss: 0.003486
+Total Loss: 0.81190006, Acc: 0.85460000
+epoch: 28600, loss: 0.04478
+Total Loss: 0.78240011, Acc: 0.86260000
+epoch: 28700, loss: 0.01674
+Total Loss: 0.75792259, Acc: 0.86660000
+epoch: 28800, loss: 0.01733
+Total Loss: 0.75294205, Acc: 0.86270000
+epoch: 28900, loss: 0.01383
+Total Loss: 0.68344682, Acc: 0.87090000
+epoch: 29000, loss: 0.001712
+Total Loss: 0.63229887, Acc: 0.87010000
+epoch: 29100, loss: 0.09757
+Total Loss: 0.71897808, Acc: 0.86800000
+epoch: 29200, loss: 0.008344
+Total Loss: 0.80212624, Acc: 0.85730000
+epoch: 29300, loss: 0.007486
+Total Loss: 0.75984726, Acc: 0.85090000
+epoch: 29400, loss: 0.001264
+Total Loss: 0.74996701, Acc: 0.86790000
+epoch: 29500, loss: 0.08532
+Total Loss: 0.74019208, Acc: 0.86370000
+epoch: 29600, loss: 0.006893
+Total Loss: 0.79978213, Acc: 0.84930000
+epoch: 29700, loss: 0.009261
+Total Loss: 0.81063120, Acc: 0.86560000
+epoch: 29800, loss: 0.01194
+Total Loss: 0.70205944, Acc: 0.87020000
+epoch: 29900, loss: 0.08602
+Total Loss: 0.72451498, Acc: 0.86320000
+epoch: 30000, loss: 0.02331
+Total Loss: 0.80819074, Acc: 0.86220000
+epoch: 30100, loss: 0.001643
+Total Loss: 0.73860208, Acc: 0.86930000
+epoch: 30200, loss: 0.002927
+Total Loss: 0.76391906, Acc: 0.86810000
+epoch: 30300, loss: 0.01031
+Total Loss: 0.84540801, Acc: 0.86150000
+epoch: 30400, loss: 0.0283
+Total Loss: 0.88062142, Acc: 0.84260000
+epoch: 30500, loss: 0.001631
+Total Loss: 0.70541661, Acc: 0.86880000
+epoch: 30600, loss: 0.001365
+Total Loss: 0.72411301, Acc: 0.86520000
+epoch: 30700, loss: 0.003218
+Total Loss: 0.76940342, Acc: 0.86550000
+epoch: 30800, loss: 0.004471
+Total Loss: 0.70701548, Acc: 0.86210000
+epoch: 30900, loss: 0.001643
+Total Loss: 0.77544746, Acc: 0.86550000
+epoch: 31000, loss: 0.06739
+Total Loss: 0.78139283, Acc: 0.86360000
+epoch: 31100, loss: 0.005283
+Total Loss: 0.85020050, Acc: 0.85080000
+epoch: 31200, loss: 0.003668
+Total Loss: 0.79658153, Acc: 0.86060000
+epoch: 31300, loss: 0.04964
+Total Loss: 0.71220777, Acc: 0.86370000
+epoch: 31400, loss: 0.004305
+Total Loss: 0.74879945, Acc: 0.86020000
+epoch: 31500, loss: 0.000106
+Total Loss: 0.78521606, Acc: 0.86630000
+epoch: 31600, loss: 0.001786
+Total Loss: 0.80759933, Acc: 0.86520000
+epoch: 31700, loss: 0.005829
+Total Loss: 0.84583861, Acc: 0.85980000
+epoch: 31800, loss: 0.02854
+Total Loss: 0.87707770, Acc: 0.87320000
+epoch: 31900, loss: 0.002745
+Total Loss: 0.84600139, Acc: 0.86270000
+epoch: 32000, loss: 0.01346
+Total Loss: 0.78903364, Acc: 0.86600000
+epoch: 32100, loss: 0.03315
+Total Loss: 0.80456283, Acc: 0.86750000
+epoch: 32200, loss: 0.002644
+Total Loss: 0.80290880, Acc: 0.85820000
+epoch: 32300, loss: 0.001323
+Total Loss: 0.77285562, Acc: 0.86010000
+epoch: 32400, loss: 0.01517
+Total Loss: 0.75472047, Acc: 0.86200000
+epoch: 32500, loss: 0.0008418
+Total Loss: 0.79687779, Acc: 0.86440000
+epoch: 32600, loss: 0.04004
+Total Loss: 0.82763098, Acc: 0.85020000
+epoch: 32700, loss: 0.08162
+Total Loss: 0.73640744, Acc: 0.86450000
+epoch: 32800, loss: 0.004054
+Total Loss: 0.79338779, Acc: 0.85520000
+epoch: 32900, loss: 0.005578
+Total Loss: 0.86232581, Acc: 0.86070000
+epoch: 33000, loss: 0.002974
+Total Loss: 0.84319056, Acc: 0.85390000
+epoch: 33100, loss: 0.01024
+Total Loss: 0.79007216, Acc: 0.86210000
+epoch: 33200, loss: 0.006444
+Total Loss: 0.75775894, Acc: 0.85440000
+epoch: 33300, loss: 0.03047
+Total Loss: 0.72257003, Acc: 0.86200000
+epoch: 33400, loss: 0.02254
+Total Loss: 0.73033978, Acc: 0.86220000
+epoch: 33500, loss: 0.006563
+Total Loss: 0.77636872, Acc: 0.86150000
+epoch: 33600, loss: 0.09519
+Total Loss: 0.76413582, Acc: 0.86400000
+epoch: 33700, loss: 0.001042
+Total Loss: 0.78350424, Acc: 0.86790000
+epoch: 33800, loss: 0.0009294
+Total Loss: 0.71755614, Acc: 0.86660000
+epoch: 33900, loss: 0.02034
+Total Loss: 0.71395044, Acc: 0.86800000
+epoch: 34000, loss: 0.0829
+Total Loss: 0.76226771, Acc: 0.86590000
+epoch: 34100, loss: 0.05492
+Total Loss: 0.80989345, Acc: 0.87040000
+epoch: 34200, loss: 0.0006827
+Total Loss: 0.79309993, Acc: 0.85970000
+epoch: 34300, loss: 0.003895
+Total Loss: 0.78970414, Acc: 0.86380000
+epoch: 34400, loss: 0.02089
+Total Loss: 0.86965187, Acc: 0.86510000
+epoch: 34500, loss: 0.01388
+Total Loss: 0.83233929, Acc: 0.86260000
+epoch: 34600, loss: 0.01054
+Total Loss: 0.78140008, Acc: 0.85520000
+epoch: 34700, loss: 0.002574
+Total Loss: 0.81157773, Acc: 0.85950000
+epoch: 34800, loss: 0.05464
+Total Loss: 0.80515166, Acc: 0.85940000
+epoch: 34900, loss: 0.001649
+Total Loss: 0.75674904, Acc: 0.86480000
+epoch: 35000, loss: 0.0166
+Total Loss: 0.94576549, Acc: 0.84440000
+epoch: 35100, loss: 0.06391
+Total Loss: 0.79453625, Acc: 0.86480000
+epoch: 35200, loss: 0.007592
+Total Loss: 0.74391438, Acc: 0.86030000
+epoch: 35300, loss: 0.002791
+Total Loss: 0.78160459, Acc: 0.86680000
+epoch: 35400, loss: 0.002415
+Total Loss: 0.82835770, Acc: 0.85960000
+epoch: 35500, loss: 0.003954
+Total Loss: 0.83906549, Acc: 0.86520000
+epoch: 35600, loss: 0.006967
+Total Loss: 0.79425637, Acc: 0.86470000
+epoch: 35700, loss: 0.01899
+Total Loss: 0.91187274, Acc: 0.85660000
+epoch: 35800, loss: 0.01826
+Total Loss: 0.93479509, Acc: 0.84590000
+epoch: 35900, loss: 0.00272
+Total Loss: 0.73506586, Acc: 0.86910000
+epoch: 36000, loss: 0.00149
+Total Loss: 0.78671388, Acc: 0.86840000
+epoch: 36100, loss: 0.02142
+Total Loss: 0.79993766, Acc: 0.85350000
+epoch: 36200, loss: 0.02331
+Total Loss: 0.82676648, Acc: 0.85240000
+epoch: 36300, loss: 0.00594
+Total Loss: 0.73597499, Acc: 0.86810000
+epoch: 36400, loss: 0.001202
+Total Loss: 0.81080994, Acc: 0.86900000
+epoch: 36500, loss: 0.01395
+Total Loss: 0.75017046, Acc: 0.86310000
+epoch: 36600, loss: 0.001925
+Total Loss: 0.76693983, Acc: 0.87220000
+epoch: 36700, loss: 0.003325
+Total Loss: 0.74224086, Acc: 0.86400000
+epoch: 36800, loss: 0.001332
+Total Loss: 0.76116902, Acc: 0.87640000
+epoch: 36900, loss: 0.006412
+Total Loss: 0.77420100, Acc: 0.86840000
+epoch: 37000, loss: 0.004326
+Total Loss: 0.81951780, Acc: 0.87340000
+epoch: 37100, loss: 0.03918
+Total Loss: 0.90325382, Acc: 0.86440000
+epoch: 37200, loss: 0.02774
+Total Loss: 1.05106464, Acc: 0.83310000
+epoch: 37300, loss: 0.008372
+Total Loss: 0.70023480, Acc: 0.86280000
+epoch: 37400, loss: 0.05238
+Total Loss: 0.76094159, Acc: 0.86520000
+epoch: 37500, loss: 0.004468
+Total Loss: 0.89289101, Acc: 0.85520000
+epoch: 37600, loss: 0.05748
+Total Loss: 0.77881229, Acc: 0.86450000
+epoch: 37700, loss: 0.07805
+Total Loss: 0.81114109, Acc: 0.86130000
+epoch: 37800, loss: 0.0006088
+Total Loss: 0.78329750, Acc: 0.86790000
+epoch: 37900, loss: 0.0009764
+Total Loss: 0.76924985, Acc: 0.86930000
+epoch: 38000, loss: 0.005963
+Total Loss: 0.75711970, Acc: 0.85660000
+epoch: 38100, loss: 0.0001327
+Total Loss: 0.77978252, Acc: 0.86760000
+epoch: 38200, loss: 0.002278
+Total Loss: 0.77838582, Acc: 0.87130000
+epoch: 38300, loss: 0.0004493
+Total Loss: 0.79430725, Acc: 0.87030000
+epoch: 38400, loss: 0.002766
+Total Loss: 0.73542702, Acc: 0.86510000
+epoch: 38500, loss: 0.003827
+Total Loss: 0.76797059, Acc: 0.87090000
+epoch: 38600, loss: 0.02587
+Total Loss: 0.87414194, Acc: 0.85500000
+epoch: 38700, loss: 0.004937
+Total Loss: 0.78774595, Acc: 0.86540000
+epoch: 38800, loss: 0.003128
+Total Loss: 0.84464654, Acc: 0.85730000
+epoch: 38900, loss: 0.001965
+Total Loss: 1.04560323, Acc: 0.85900000
+epoch: 39000, loss: 0.003614
+Total Loss: 0.73197388, Acc: 0.86100000
+epoch: 39100, loss: 0.009064
+Total Loss: 0.71948667, Acc: 0.86690000
+epoch: 39200, loss: 0.001905
+Total Loss: 0.74938042, Acc: 0.87040000
+epoch: 39300, loss: 0.005985
+Total Loss: 0.79747873, Acc: 0.86900000
+epoch: 39400, loss: 0.0009358
+Total Loss: 0.86962070, Acc: 0.86470000
+epoch: 39500, loss: 0.0001518
+Total Loss: 0.84378729, Acc: 0.87000000
+epoch: 39600, loss: 0.06826
+Total Loss: 0.89763797, Acc: 0.85460000
+epoch: 39700, loss: 0.02013
+Total Loss: 0.83882508, Acc: 0.85910000
+epoch: 39800, loss: 0.001274
+Total Loss: 0.72343177, Acc: 0.86850000
+epoch: 39900, loss: 0.01353
+Total Loss: 0.84840197, Acc: 0.87010000
+epoch: 40000, loss: 0.003728
+Total Loss: 0.84602975, Acc: 0.85980000
+epoch: 40100, loss: 0.0006523
+Total Loss: 0.82704678, Acc: 0.86710000
+epoch: 40200, loss: 0.0004529
+Total Loss: 0.79501615, Acc: 0.85960000
+epoch: 40300, loss: 0.02267
+Total Loss: 0.82951350, Acc: 0.86390000
+epoch: 40400, loss: 0.0006765
+Total Loss: 0.77120084, Acc: 0.86920000
+epoch: 40500, loss: 0.0001501
+Total Loss: 0.78481184, Acc: 0.87450000
+epoch: 40600, loss: 0.001256
+Total Loss: 0.80408038, Acc: 0.87470000
+epoch: 40700, loss: 0.00122
+Total Loss: 0.83056893, Acc: 0.86860000
+epoch: 40800, loss: 0.001177
+Total Loss: 0.85561592, Acc: 0.86660000
+epoch: 40900, loss: 0.007079
+Total Loss: 0.83081331, Acc: 0.86870000
+epoch: 41000, loss: 0.0004072
+Total Loss: 0.77556811, Acc: 0.86090000
+epoch: 41100, loss: 0.04596
+Total Loss: 0.83338299, Acc: 0.86790000
+epoch: 41200, loss: 0.0007616
+Total Loss: 0.81600200, Acc: 0.87020000
+epoch: 41300, loss: 0.01103
+Total Loss: 0.82702392, Acc: 0.86380000
+epoch: 41400, loss: 0.01395
+Total Loss: 0.80946510, Acc: 0.87080000
+epoch: 41500, loss: 0.01057
+Total Loss: 0.80136355, Acc: 0.86840000
+epoch: 41600, loss: 0.0007855
+Total Loss: 0.84415074, Acc: 0.86400000
+epoch: 41700, loss: 0.004354
+Total Loss: 0.75405434, Acc: 0.86610000
+epoch: 41800, loss: 0.002289
+Total Loss: 0.77357085, Acc: 0.87450000
+epoch: 41900, loss: 0.0007269
+Total Loss: 0.80320933, Acc: 0.87200000
+epoch: 42000, loss: 0.004928
+Total Loss: 0.87965047, Acc: 0.86820000
+epoch: 42100, loss: 0.02098
+Total Loss: 0.88740116, Acc: 0.85500000
+epoch: 42200, loss: 0.005164
+Total Loss: 0.83398466, Acc: 0.86120000
+epoch: 42300, loss: 0.04035
+Total Loss: 0.79703042, Acc: 0.85960000
+epoch: 42400, loss: 0.001046
+Total Loss: 0.71856301, Acc: 0.87010000
+epoch: 42500, loss: 0.0007565
+Total Loss: 0.79561832, Acc: 0.87130000
+epoch: 42600, loss: 0.0001713
+Total Loss: 0.78022529, Acc: 0.87510000
+epoch: 42700, loss: 0.0001945
+Total Loss: 0.90091042, Acc: 0.86760000
+epoch: 42800, loss: 0.001603
+Total Loss: 0.82059370, Acc: 0.86640000
+epoch: 42900, loss: 0.01212
+Total Loss: 0.79520821, Acc: 0.86720000
+epoch: 43000, loss: 0.05405
+Total Loss: 0.84879249, Acc: 0.86850000
+epoch: 43100, loss: 0.001121
+Total Loss: 0.78345431, Acc: 0.87180000
+epoch: 43200, loss: 0.01151
+Total Loss: 0.86124194, Acc: 0.86790000
+epoch: 43300, loss: 0.001038
+Total Loss: 0.81262796, Acc: 0.86970000
+epoch: 43400, loss: 0.008943
+Total Loss: 0.83912412, Acc: 0.86170000
+epoch: 43500, loss: 0.002932
+Total Loss: 0.88097522, Acc: 0.86490000
+epoch: 43600, loss: 0.006962
+Total Loss: 0.81172654, Acc: 0.86250000
+epoch: 43700, loss: 0.08416
+Total Loss: 0.75508715, Acc: 0.86980000
+epoch: 43800, loss: 0.05069
+Total Loss: 0.82347809, Acc: 0.86690000
+epoch: 43900, loss: 0.004613
+Total Loss: 0.93225774, Acc: 0.86630000
+epoch: 44000, loss: 0.001565
+Total Loss: 0.87778764, Acc: 0.86750000
+epoch: 44100, loss: 5.846e-05
+Total Loss: 0.76060103, Acc: 0.87440000
+epoch: 44200, loss: 0.007667
+Total Loss: 0.88557479, Acc: 0.86960000
+epoch: 44300, loss: 0.0005435
+Total Loss: 0.94362603, Acc: 0.87000000
+epoch: 44400, loss: 0.01011
+Total Loss: 1.00130840, Acc: 0.85500000
+epoch: 44500, loss: 0.0003895
+Total Loss: 0.79240415, Acc: 0.86880000
+epoch: 44600, loss: 0.0221
+Total Loss: 0.80022579, Acc: 0.87230000
+epoch: 44700, loss: 0.01326
+Total Loss: 0.82018879, Acc: 0.86280000
+epoch: 44800, loss: 0.001797
+Total Loss: 0.82055921, Acc: 0.86870000
+epoch: 44900, loss: 0.03672
+Total Loss: 0.82563618, Acc: 0.85720000
+epoch: 45000, loss: 0.001094
+Total Loss: 0.77995901, Acc: 0.86660000
+epoch: 45100, loss: 0.0001885
+Total Loss: 0.81655765, Acc: 0.87550000
+epoch: 45200, loss: 0.004526
+Total Loss: 0.79909781, Acc: 0.87160000
+epoch: 45300, loss: 0.1327
+Total Loss: 0.87482076, Acc: 0.86960000
+epoch: 45400, loss: 0.01925
+Total Loss: 0.79033403, Acc: 0.86710000
+epoch: 45500, loss: 0.01833
+Total Loss: 0.84867568, Acc: 0.86590000
+epoch: 45600, loss: 0.001883
+Total Loss: 0.93076910, Acc: 0.85600000
+epoch: 45700, loss: 7.132e-05
+Total Loss: 0.94671352, Acc: 0.86550000
+epoch: 45800, loss: 0.0002171
+Total Loss: 0.87225402, Acc: 0.86620000
+epoch: 45900, loss: 0.03039
+Total Loss: 0.82720393, Acc: 0.87080000
+epoch: 46000, loss: 0.0003732
+Total Loss: 0.78040452, Acc: 0.86190000
+epoch: 46100, loss: 0.006099
+Total Loss: 0.81026294, Acc: 0.86770000
+epoch: 46200, loss: 0.00355
+Total Loss: 0.82684924, Acc: 0.87200000
+epoch: 46300, loss: 0.104
+Total Loss: 0.95781614, Acc: 0.86500000
+epoch: 46400, loss: 0.0005522
+Total Loss: 0.89451986, Acc: 0.86640000
+epoch: 46500, loss: 0.0003881
+Total Loss: 0.86636190, Acc: 0.86870000
+epoch: 46600, loss: 0.1023
+Total Loss: 0.87259632, Acc: 0.87150000
+epoch: 46700, loss: 0.001082
+Total Loss: 0.84417820, Acc: 0.86840000
+epoch: 46800, loss: 0.007963
+Total Loss: 0.84391499, Acc: 0.87090000
+epoch: 46900, loss: 0.0003952
+Total Loss: 0.91682090, Acc: 0.85960000
+epoch: 47000, loss: 0.01607
+Total Loss: 0.78743378, Acc: 0.86400000
+epoch: 47100, loss: 0.001175
+Total Loss: 0.85823630, Acc: 0.86920000
+epoch: 47200, loss: 0.0006645
+Total Loss: 0.75688219, Acc: 0.86970000
+epoch: 47300, loss: 0.00845
+Total Loss: 0.82065602, Acc: 0.87520000
+epoch: 47400, loss: 0.004141
+Total Loss: 0.83113124, Acc: 0.87660000
+epoch: 47500, loss: 0.002754
+Total Loss: 0.94158542, Acc: 0.87160000
+epoch: 47600, loss: 0.0002032
+Total Loss: 0.97982269, Acc: 0.87140000
+epoch: 47700, loss: 0.01196
+Total Loss: 0.86002635, Acc: 0.86490000
+epoch: 47800, loss: 0.001498
+Total Loss: 0.85013438, Acc: 0.87010000
+epoch: 47900, loss: 0.0002544
+Total Loss: 0.92055052, Acc: 0.86650000
+epoch: 48000, loss: 0.001111
+Total Loss: 0.91220958, Acc: 0.86280000
+epoch: 48100, loss: 0.004163
+Total Loss: 0.89256305, Acc: 0.86910000
+epoch: 48200, loss: 0.01632
+Total Loss: 0.86590916, Acc: 0.86570000
+epoch: 48300, loss: 0.002229
+Total Loss: 0.85787981, Acc: 0.86650000
+epoch: 48400, loss: 0.004377
+Total Loss: 0.75717904, Acc: 0.86950000
+epoch: 48500, loss: 0.0001272
+Total Loss: 0.83516256, Acc: 0.86670000
+epoch: 48600, loss: 0.005579
+Total Loss: 0.96184977, Acc: 0.86340000
+epoch: 48700, loss: 0.04896
+Total Loss: 0.80328938, Acc: 0.86190000
+epoch: 48800, loss: 2.67e-05
+Total Loss: 0.78374549, Acc: 0.87250000
+epoch: 48900, loss: 0.0004593
+Total Loss: 0.85401593, Acc: 0.87200000
+epoch: 49000, loss: 0.01486
+Total Loss: 1.01191733, Acc: 0.86350000
+epoch: 49100, loss: 0.0005907
+Total Loss: 0.87714074, Acc: 0.85950000
+epoch: 49200, loss: 0.01611
+Total Loss: 0.89518758, Acc: 0.85820000
+epoch: 49300, loss: 0.0004148
+Total Loss: 0.83110137, Acc: 0.87490000
+epoch: 49400, loss: 0.02284
+Total Loss: 0.81692385, Acc: 0.87370000
+epoch: 49500, loss: 0.06287
+Total Loss: 0.84121529, Acc: 0.86980000
+epoch: 49600, loss: 0.0006377
+Total Loss: 0.75541497, Acc: 0.87090000
+epoch: 49700, loss: 0.04326
+Total Loss: 0.98887446, Acc: 0.85060000
+epoch: 49800, loss: 0.000266
+Total Loss: 0.79762404, Acc: 0.87200000
+epoch: 49900, loss: 0.005829
+Total Loss: 0.79488489, Acc: 0.87400000
+epoch: 50000, loss: 0.03377
+Total Loss: 0.85037434, Acc: 0.87330000
+epoch: 50100, loss: 0.009994
+Total Loss: 0.83797866, Acc: 0.86820000
+epoch: 50200, loss: 0.04526
+Total Loss: 0.87824166, Acc: 0.86200000
+epoch: 50300, loss: 0.01133
+Total Loss: 0.85457107, Acc: 0.85790000
+epoch: 50400, loss: 0.008177
+Total Loss: 0.78617997, Acc: 0.87260000
+epoch: 50500, loss: 2.512e-05
+Total Loss: 0.86011791, Acc: 0.87030000
+epoch: 50600, loss: 0.002402
+Total Loss: 1.00476700, Acc: 0.85810000
+epoch: 50700, loss: 0.0007078
+Total Loss: 0.87918641, Acc: 0.87740000
+epoch: 50800, loss: 0.0157
+Total Loss: 0.81426779, Acc: 0.86870000
+epoch: 50900, loss: 0.0003247
+Total Loss: 0.84500528, Acc: 0.86460000
+epoch: 51000, loss: 3.964e-06
+Total Loss: 0.81336763, Acc: 0.87590000
+epoch: 51100, loss: 0.003067
+Total Loss: 0.86710130, Acc: 0.86950000
+epoch: 51200, loss: 7.178e-05
+Total Loss: 0.83747302, Acc: 0.87570000
+epoch: 51300, loss: 0.0004613
+Total Loss: 0.84073557, Acc: 0.86840000
+epoch: 51400, loss: 0.0005122
+Total Loss: 0.80508400, Acc: 0.87630000
+epoch: 51500, loss: 5.721e-05
+Total Loss: 0.91966036, Acc: 0.87310000
+epoch: 51600, loss: 0.0008811
+Total Loss: 1.00548138, Acc: 0.86920000
+epoch: 51700, loss: 0.0001643
+Total Loss: 0.88397362, Acc: 0.87550000
+epoch: 51800, loss: 0.003968
+Total Loss: 0.84763310, Acc: 0.86980000
+epoch: 51900, loss: 0.02734
+Total Loss: 0.89821907, Acc: 0.86420000
+epoch: 52000, loss: 0.0005348
+Total Loss: 0.80358308, Acc: 0.87510000
+epoch: 52100, loss: 0.001093
+Total Loss: 0.85729484, Acc: 0.86400000
+epoch: 52200, loss: 0.01413
+Total Loss: 0.83898143, Acc: 0.86980000
+epoch: 52300, loss: 0.0004441
+Total Loss: 0.81862354, Acc: 0.87560000
+epoch: 52400, loss: 0.0007526
+Total Loss: 0.86772720, Acc: 0.86240000
+epoch: 52500, loss: 0.00217
+Total Loss: 0.84509859, Acc: 0.86300000
+epoch: 52600, loss: 0.0009121
+Total Loss: 0.81506249, Acc: 0.86340000
+epoch: 52700, loss: 0.0002922
+Total Loss: 0.88256672, Acc: 0.86580000
+epoch: 52800, loss: 0.0001944
+Total Loss: 0.84149015, Acc: 0.86880000
+epoch: 52900, loss: 0.001587
+Total Loss: 0.84933157, Acc: 0.87390000
+epoch: 53000, loss: 0.0006313
+Total Loss: 0.84578058, Acc: 0.87320000
+epoch: 53100, loss: 0.0008316
+Total Loss: 0.90347558, Acc: 0.87160000
+epoch: 53200, loss: 0.06121
+Total Loss: 0.81359067, Acc: 0.87370000
+epoch: 53300, loss: 0.1208
+Total Loss: 0.93173905, Acc: 0.86270000
+epoch: 53400, loss: 0.004549
+Total Loss: 0.80474540, Acc: 0.86580000
+epoch: 53500, loss: 0.00409
+Total Loss: 0.81898875, Acc: 0.86680000
+epoch: 53600, loss: 0.01041
+Total Loss: 0.89695999, Acc: 0.87220000
+epoch: 53700, loss: 0.003106
+Total Loss: 0.80527175, Acc: 0.86610000
+epoch: 53800, loss: 0.006408
+Total Loss: 0.81410682, Acc: 0.86520000
+epoch: 53900, loss: 0.0021
+Total Loss: 0.83157516, Acc: 0.87200000
+epoch: 54000, loss: 0.004405
+Total Loss: 0.98302056, Acc: 0.86140000
+epoch: 54100, loss: 0.008945
+Total Loss: 0.94837390, Acc: 0.85100000
+epoch: 54200, loss: 0.0007758
+Total Loss: 0.88414179, Acc: 0.86910000
+epoch: 54300, loss: 0.0002474
+Total Loss: 0.86946713, Acc: 0.87100000
+epoch: 54400, loss: 0.001534
+Total Loss: 0.85814275, Acc: 0.86880000
+epoch: 54500, loss: 0.0003075
+Total Loss: 0.83107852, Acc: 0.87620000
+epoch: 54600, loss: 0.0002677
+Total Loss: 0.86640221, Acc: 0.87470000
+epoch: 54700, loss: 0.003165
+Total Loss: 0.96149605, Acc: 0.86770000
+epoch: 54800, loss: 0.0003358
+Total Loss: 0.90219691, Acc: 0.87050000
+epoch: 54900, loss: 0.001485
+Total Loss: 0.96089960, Acc: 0.86310000
+epoch: 55000, loss: 0.001724
+Total Loss: 0.84881866, Acc: 0.87140000
+epoch: 55100, loss: 0.0364
+Total Loss: 0.92857368, Acc: 0.86880000
+epoch: 55200, loss: 0.00118
+Total Loss: 0.87455533, Acc: 0.86960000
+epoch: 55300, loss: 0.001894
+Total Loss: 0.91997196, Acc: 0.86890000
+epoch: 55400, loss: 0.00212
+Total Loss: 0.89563310, Acc: 0.86380000
+epoch: 55500, loss: 0.0002911
+Total Loss: 0.88991655, Acc: 0.87470000
+epoch: 55600, loss: 5.369e-05
+Total Loss: 0.88819400, Acc: 0.87850000
+epoch: 55700, loss: 0.0003166
+Total Loss: 0.89708984, Acc: 0.87630000
+epoch: 55800, loss: 0.001925
+Total Loss: 0.99707114, Acc: 0.87270000
+epoch: 55900, loss: 0.007926
+Total Loss: 0.88748818, Acc: 0.86910000
+epoch: 56000, loss: 0.002757
+Total Loss: 0.96586253, Acc: 0.86420000
+epoch: 56100, loss: 0.0004479
+Total Loss: 0.86517850, Acc: 0.86860000
+epoch: 56200, loss: 8.132e-05
+Total Loss: 0.83037389, Acc: 0.87160000
+epoch: 56300, loss: 0.001293
+Total Loss: 0.87769289, Acc: 0.87310000
+epoch: 56400, loss: 8.461e-05
+Total Loss: 0.85217580, Acc: 0.87460000
+epoch: 56500, loss: 0.001969
+Total Loss: 0.87611833, Acc: 0.87810000
+epoch: 56600, loss: 0.001151
+Total Loss: 0.91997823, Acc: 0.87710000
+epoch: 56700, loss: 0.0002612
+Total Loss: 0.94075078, Acc: 0.87930000
+epoch: 56800, loss: 6.698e-05
+Total Loss: 0.95542395, Acc: 0.87850000
+epoch: 56900, loss: 0.0001131
+Total Loss: 0.95571839, Acc: 0.87200000
+epoch: 57000, loss: 0.0007651
+Total Loss: 0.91683926, Acc: 0.87980000
+epoch: 57100, loss: 0.002888
+Total Loss: 1.00389613, Acc: 0.86630000
+epoch: 57200, loss: 0.005471
+Total Loss: 0.88228691, Acc: 0.86540000
+epoch: 57300, loss: 0.01148
+Total Loss: 0.88573054, Acc: 0.87390000
+epoch: 57400, loss: 0.001562
+Total Loss: 0.84180072, Acc: 0.87320000
+epoch: 57500, loss: 9.406e-05
+Total Loss: 0.89827909, Acc: 0.87660000
+epoch: 57600, loss: 2.295e-06
+Total Loss: 0.90059113, Acc: 0.87850000
+epoch: 57700, loss: 0.001742
+Total Loss: 0.91061055, Acc: 0.87700000
+epoch: 57800, loss: 4.745e-05
+Total Loss: 0.91985936, Acc: 0.87880000
+epoch: 57900, loss: 1.656e-05
+Total Loss: 0.89872292, Acc: 0.88100000
+epoch: 58000, loss: 1.514e-05
+Total Loss: 0.93904624, Acc: 0.87770000
+epoch: 58100, loss: 9.203e-05
+Total Loss: 0.91917314, Acc: 0.88110000
+epoch: 58200, loss: 1.311e-06
+Total Loss: 0.92553657, Acc: 0.87560000
+epoch: 58300, loss: 5.214e-05
+Total Loss: 0.94244587, Acc: 0.87730000
+epoch: 58400, loss: 0.0454
+Total Loss: 1.08242158, Acc: 0.85420000
+epoch: 58500, loss: 0.0003436
+Total Loss: 0.90726431, Acc: 0.87730000
+epoch: 58600, loss: 0.04704
+Total Loss: 0.93980985, Acc: 0.86990000
+epoch: 58700, loss: 0.0003619
+Total Loss: 0.97516293, Acc: 0.87680000
+epoch: 58800, loss: 0.00185
+Total Loss: 0.97823313, Acc: 0.86910000
+epoch: 58900, loss: 0.004689
+Total Loss: 0.94109532, Acc: 0.86490000
+epoch: 59000, loss: 0.003036
+Total Loss: 1.04711734, Acc: 0.85600000
+epoch: 59100, loss: 0.000367
+Total Loss: 0.89204440, Acc: 0.86840000
+epoch: 59200, loss: 0.006871
+Total Loss: 0.81469398, Acc: 0.87220000
+epoch: 59300, loss: 0.0005654
+Total Loss: 0.83622817, Acc: 0.87670000
+epoch: 59400, loss: 0.004807
+Total Loss: 0.90419013, Acc: 0.87740000
+epoch: 59500, loss: 0.01479
+Total Loss: 1.01874046, Acc: 0.86510000
+epoch: 59600, loss: 0.004442
+Total Loss: 0.85148475, Acc: 0.87310000
+epoch: 59700, loss: 0.007316
+Total Loss: 0.81405146, Acc: 0.86610000
+epoch: 59800, loss: 9.352e-05
+Total Loss: 0.86240039, Acc: 0.87490000
+epoch: 59900, loss: 6.682e-05
+Total Loss: 0.88537809, Acc: 0.87140000
+epoch: 60000, loss: 1.845e-05
+Total Loss: 0.86040333, Acc: 0.87880000
+epoch: 60100, loss: 0.0004605
+Total Loss: 0.86815648, Acc: 0.87860000
+epoch: 60200, loss: 6.533e-05
+Total Loss: 0.90913992, Acc: 0.87830000
+epoch: 60300, loss: 0.000189
+Total Loss: 0.99943845, Acc: 0.86530000
+epoch: 60400, loss: 0.0001205
+Total Loss: 0.97733031, Acc: 0.86510000
+epoch: 60500, loss: 0.0002581
+Total Loss: 0.84755624, Acc: 0.87620000
+epoch: 60600, loss: 0.0001406
+Total Loss: 0.92273593, Acc: 0.87310000
+epoch: 60700, loss: 0.0002099
+Total Loss: 0.87965954, Acc: 0.87480000
+epoch: 60800, loss: 0.002601
+Total Loss: 0.88131558, Acc: 0.88000000
+epoch: 60900, loss: 0.002093
+Total Loss: 0.94366927, Acc: 0.87590000
+epoch: 61000, loss: 3.248e-05
+Total Loss: 0.97504661, Acc: 0.87670000
+epoch: 61100, loss: 0.0002023
+Total Loss: 0.89863320, Acc: 0.87750000
+epoch: 61200, loss: 0.0003504
+Total Loss: 0.99599558, Acc: 0.86430000
+epoch: 61300, loss: 0.0002079
+Total Loss: 0.94551785, Acc: 0.87220000
+epoch: 61400, loss: 0.000108
+Total Loss: 1.02717072, Acc: 0.86560000
+epoch: 61500, loss: 0.0006808
+Total Loss: 0.93691516, Acc: 0.87890000
+epoch: 61600, loss: 0.004683
+Total Loss: 0.99230746, Acc: 0.87750000
+epoch: 61700, loss: 0.0006713
+Total Loss: 0.87855436, Acc: 0.87370000
+epoch: 61800, loss: 0.0112
+Total Loss: 0.94377568, Acc: 0.87090000
+epoch: 61900, loss: 0.0002086
+Total Loss: 0.93575629, Acc: 0.87700000
+epoch: 62000, loss: 1.061e-05
+Total Loss: 0.94149139, Acc: 0.87990000
+epoch: 62100, loss: 6.407e-06
+Total Loss: 0.95473519, Acc: 0.87670000
+epoch: 62200, loss: 0.0001058
+Total Loss: 0.91739298, Acc: 0.87610000
+epoch: 62300, loss: 0.0001362
+Total Loss: 0.91143823, Acc: 0.87270000
+epoch: 62400, loss: 0.002667
+Total Loss: 0.97670358, Acc: 0.86030000
+epoch: 62500, loss: 0.002169
+Total Loss: 1.08750795, Acc: 0.85680000
+epoch: 62600, loss: 1.134e-05
+Total Loss: 0.89223006, Acc: 0.87390000
+epoch: 62700, loss: 0.0004391
+Total Loss: 0.90331689, Acc: 0.87460000
+epoch: 62800, loss: 0.001518
+Total Loss: 1.01255488, Acc: 0.86850000
+epoch: 62900, loss: 0.001156
+Total Loss: 0.92136108, Acc: 0.87130000
+epoch: 63000, loss: 0.0006822
+Total Loss: 0.97778257, Acc: 0.87110000
+epoch: 63100, loss: 7.957e-05
+Total Loss: 0.99752257, Acc: 0.87130000
+epoch: 63200, loss: 0.002168
+Total Loss: 1.01130281, Acc: 0.87560000
+epoch: 63300, loss: 0.02865
+Total Loss: 0.87410458, Acc: 0.86520000
+epoch: 63400, loss: 0.05945
+Total Loss: 0.92800609, Acc: 0.86630000
+epoch: 63500, loss: 0.02286
+Total Loss: 0.93968621, Acc: 0.86710000
+epoch: 63600, loss: 0.00563
+Total Loss: 0.96916400, Acc: 0.87010000
+epoch: 63700, loss: 0.007456
+Total Loss: 0.95452499, Acc: 0.86870000
+epoch: 63800, loss: 0.03536
+Total Loss: 0.92740516, Acc: 0.87330000
+epoch: 63900, loss: 0.05039
+Total Loss: 1.05309014, Acc: 0.86410000
+epoch: 64000, loss: 0.002625
+Total Loss: 0.96324302, Acc: 0.87180000
+epoch: 64100, loss: 0.0001717
+Total Loss: 0.88938291, Acc: 0.86990000
+epoch: 64200, loss: 0.002259
+Total Loss: 0.92176167, Acc: 0.86700000
+epoch: 64300, loss: 0.0002987
+Total Loss: 0.96713554, Acc: 0.86580000
+epoch: 64400, loss: 0.0005973
+Total Loss: 0.97089119, Acc: 0.87150000
+epoch: 64500, loss: 0.01148
+Total Loss: 0.86751653, Acc: 0.87230000
+epoch: 64600, loss: 5.546e-05
+Total Loss: 0.87843499, Acc: 0.87080000
+epoch: 64700, loss: 7.972e-05
+Total Loss: 0.99270082, Acc: 0.87050000
+epoch: 64800, loss: 0.001014
+Total Loss: 0.89827911, Acc: 0.86570000
+epoch: 64900, loss: 0.002601
+Total Loss: 0.89573148, Acc: 0.87310000
+epoch: 65000, loss: 0.001152
+Total Loss: 0.91452870, Acc: 0.86700000
+epoch: 65100, loss: 0.03447
+Total Loss: 0.94571891, Acc: 0.85970000
+epoch: 65200, loss: 0.001951
+Total Loss: 0.85457382, Acc: 0.86470000
+epoch: 65300, loss: 0.0003633
+Total Loss: 0.94417941, Acc: 0.86270000
+epoch: 65400, loss: 0.001699
+Total Loss: 0.92466382, Acc: 0.87230000
+epoch: 65500, loss: 0.0006217
+Total Loss: 0.91728911, Acc: 0.87210000
+epoch: 65600, loss: 0.02209
+Total Loss: 0.87215666, Acc: 0.86300000
+epoch: 65700, loss: 0.002906
+Total Loss: 0.84746480, Acc: 0.87040000
+epoch: 65800, loss: 0.0007891
+Total Loss: 0.90398790, Acc: 0.87240000
+epoch: 65900, loss: 0.009773
+Total Loss: 0.93024151, Acc: 0.86590000
+epoch: 66000, loss: 0.0001415
+Total Loss: 0.79666345, Acc: 0.87720000
+epoch: 66100, loss: 0.01218
+Total Loss: 0.98688799, Acc: 0.86410000
+epoch: 66200, loss: 0.001433
+Total Loss: 0.91613601, Acc: 0.87120000
+epoch: 66300, loss: 2.666e-05
+Total Loss: 0.92969176, Acc: 0.87700000
+epoch: 66400, loss: 0.000114
+Total Loss: 0.87532297, Acc: 0.87940000
+epoch: 66500, loss: 0.00231
+Total Loss: 0.92665492, Acc: 0.87390000
+epoch: 66600, loss: 0.0001749
+Total Loss: 0.94313688, Acc: 0.87180000
+epoch: 66700, loss: 0.002376
+Total Loss: 0.80243599, Acc: 0.86700000
+epoch: 66800, loss: 4.35e-05
+Total Loss: 0.86597350, Acc: 0.87640000
+epoch: 66900, loss: 0.001647
+Total Loss: 0.87930270, Acc: 0.87000000
+epoch: 67000, loss: 0.0002315
+Total Loss: 0.90993189, Acc: 0.87530000
+epoch: 67100, loss: 0.00608
+Total Loss: 0.84578775, Acc: 0.87610000
+epoch: 67200, loss: 5.667e-05
+Total Loss: 0.88660185, Acc: 0.87500000
+epoch: 67300, loss: 0.001753
+Total Loss: 0.85279412, Acc: 0.86650000
+epoch: 67400, loss: 0.0005867
+Total Loss: 0.87877582, Acc: 0.87220000
+epoch: 67500, loss: 0.001197
+Total Loss: 0.93894207, Acc: 0.85990000
+epoch: 67600, loss: 0.004531
+Total Loss: 0.82281526, Acc: 0.86880000
+epoch: 67700, loss: 0.005092
+Total Loss: 0.80345130, Acc: 0.87290000
+epoch: 67800, loss: 0.0001265
+Total Loss: 0.84868088, Acc: 0.87180000
+epoch: 67900, loss: 0.002437
+Total Loss: 0.86045839, Acc: 0.87580000
+epoch: 68000, loss: 0.0003863
+Total Loss: 0.92429056, Acc: 0.87520000
+epoch: 68100, loss: 0.0009692
+Total Loss: 0.86196579, Acc: 0.87090000
+epoch: 68200, loss: 0.01458
+Total Loss: 0.86353156, Acc: 0.87340000
+epoch: 68300, loss: 4.026e-05
+Total Loss: 0.85175706, Acc: 0.87000000
+epoch: 68400, loss: 0.0005207
+Total Loss: 0.81950585, Acc: 0.87690000
+epoch: 68500, loss: 0.0004434
+Total Loss: 0.84957865, Acc: 0.87820000
+epoch: 68600, loss: 7.975e-05
+Total Loss: 0.87952641, Acc: 0.87730000
+epoch: 68700, loss: 0.0003436
+Total Loss: 0.92730877, Acc: 0.86530000
+epoch: 68800, loss: 0.0002412
+Total Loss: 0.86873542, Acc: 0.87210000
+epoch: 68900, loss: 0.007044
+Total Loss: 0.89009227, Acc: 0.87510000
+epoch: 69000, loss: 0.0002052
+Total Loss: 0.87470350, Acc: 0.87610000
+epoch: 69100, loss: 0.001102
+Total Loss: 0.89015955, Acc: 0.87740000
+epoch: 69200, loss: 0.01991
+Total Loss: 0.93323201, Acc: 0.87190000
+epoch: 69300, loss: 0.0004429
+Total Loss: 0.92357560, Acc: 0.87630000
+epoch: 69400, loss: 0.03888
+Total Loss: 0.92546207, Acc: 0.87360000
+epoch: 69500, loss: 0.0006499
+Total Loss: 0.94048619, Acc: 0.86960000
+epoch: 69600, loss: 0.0003914
+Total Loss: 0.90535421, Acc: 0.87850000
+epoch: 69700, loss: 0.0001211
+Total Loss: 0.95333556, Acc: 0.87440000
+epoch: 69800, loss: 0.0009513
+Total Loss: 0.89235808, Acc: 0.87630000
+epoch: 69900, loss: 0.0003011
+Total Loss: 0.90441255, Acc: 0.87740000
+epoch: 70000, loss: 2.319e-05
+Total Loss: 0.90657883, Acc: 0.87930000
+epoch: 70100, loss: 0.0001218
+Total Loss: 0.95379260, Acc: 0.87430000
+epoch: 70200, loss: 0.0002929
+Total Loss: 0.90022745, Acc: 0.87090000
+epoch: 70300, loss: 0.003825
+Total Loss: 0.86753481, Acc: 0.87490000
+epoch: 70400, loss: 3.999e-05
+Total Loss: 0.88619397, Acc: 0.87680000
+epoch: 70500, loss: 4.481e-05
+Total Loss: 0.95937590, Acc: 0.87420000
+epoch: 70600, loss: 9.631e-05
+Total Loss: 0.87911535, Acc: 0.87750000
+epoch: 70700, loss: 0.0006835
+Total Loss: 0.90289233, Acc: 0.87970000
+epoch: 70800, loss: 2.012e-05
+Total Loss: 0.93318103, Acc: 0.87950000
+epoch: 70900, loss: 0.001293
+Total Loss: 0.94782052, Acc: 0.86990000
+epoch: 71000, loss: 0.0004108
+Total Loss: 0.85284647, Acc: 0.87630000
+epoch: 71100, loss: 1.818e-06
+Total Loss: 0.88589966, Acc: 0.87720000
+epoch: 71200, loss: 0.001238
+Total Loss: 0.93806439, Acc: 0.87030000
+epoch: 71300, loss: 0.0006186
+Total Loss: 0.88594678, Acc: 0.87490000
+epoch: 71400, loss: 2.381e-05
+Total Loss: 0.87818787, Acc: 0.87970000
+epoch: 71500, loss: 0.000476
+Total Loss: 0.95573560, Acc: 0.86670000
+epoch: 71600, loss: 0.06885
+Total Loss: 0.97527424, Acc: 0.86150000
+epoch: 71700, loss: 0.0002198
+Total Loss: 1.04177514, Acc: 0.86230000
+epoch: 71800, loss: 0.008339
+Total Loss: 0.87380417, Acc: 0.86380000
+epoch: 71900, loss: 1.076e-05
+Total Loss: 0.85168706, Acc: 0.87580000
+epoch: 72000, loss: 0.003571
+Total Loss: 0.93063811, Acc: 0.86290000
+epoch: 72100, loss: 0.004755
+Total Loss: 0.87035005, Acc: 0.87500000
+epoch: 72200, loss: 0.002629
+Total Loss: 0.89061077, Acc: 0.87550000
+epoch: 72300, loss: 0.007865
+Total Loss: 0.95646626, Acc: 0.86080000
+epoch: 72400, loss: 0.004273
+Total Loss: 0.95923890, Acc: 0.86400000
+epoch: 72500, loss: 0.001305
+Total Loss: 0.81210557, Acc: 0.87330000
+epoch: 72600, loss: 0.001812
+Total Loss: 0.84069842, Acc: 0.86410000
+epoch: 72700, loss: 0.003127
+Total Loss: 0.75130899, Acc: 0.87460000
+epoch: 72800, loss: 0.0007712
+Total Loss: 0.82149389, Acc: 0.87750000
+epoch: 72900, loss: 0.0004948
+Total Loss: 0.85046830, Acc: 0.87310000
+epoch: 73000, loss: 0.0008711
+Total Loss: 0.95759313, Acc: 0.86870000
+epoch: 73100, loss: 0.0002989
+Total Loss: 0.86585496, Acc: 0.87600000
+epoch: 73200, loss: 0.0009884
+Total Loss: 0.82154022, Acc: 0.87810000
+epoch: 73300, loss: 0.0008257
+Total Loss: 0.84901888, Acc: 0.87450000
+epoch: 73400, loss: 0.0002091
+Total Loss: 0.88087866, Acc: 0.87030000
+epoch: 73500, loss: 0.04281
+Total Loss: 0.93415315, Acc: 0.86300000
+epoch: 73600, loss: 0.0006499
+Total Loss: 0.79989174, Acc: 0.87090000
+epoch: 73700, loss: 0.0004575
+Total Loss: 0.84982158, Acc: 0.87250000
+epoch: 73800, loss: 0.005287
+Total Loss: 0.87397751, Acc: 0.86860000
+epoch: 73900, loss: 0.01977
+Total Loss: 0.83264752, Acc: 0.87610000
+epoch: 74000, loss: 0.0001406
+Total Loss: 0.82389584, Acc: 0.87830000
+epoch: 74100, loss: 0.02208
+Total Loss: 0.87432178, Acc: 0.87370000
+epoch: 74200, loss: 0.002217
+Total Loss: 0.96678224, Acc: 0.87470000
+epoch: 74300, loss: 0.001374
+Total Loss: 0.89946844, Acc: 0.87210000
+epoch: 74400, loss: 0.0002457
+Total Loss: 0.84059845, Acc: 0.87740000
+epoch: 74500, loss: 0.0001153
+Total Loss: 0.85658511, Acc: 0.87900000
+epoch: 74600, loss: 0.0008271
+Total Loss: 0.97655888, Acc: 0.87010000
+epoch: 74700, loss: 0.001435
+Total Loss: 0.92259917, Acc: 0.87540000
+epoch: 74800, loss: 0.001486
+Total Loss: 0.93055262, Acc: 0.87130000
+epoch: 74900, loss: 1.843e-05
+Total Loss: 0.88007086, Acc: 0.87620000
+epoch: 75000, loss: 0.001683
+Total Loss: 1.02462916, Acc: 0.86830000
+epoch: 75100, loss: 0.001596
+Total Loss: 1.00831609, Acc: 0.87210000
+epoch: 75200, loss: 8.963e-05
+Total Loss: 0.85511116, Acc: 0.86540000
+epoch: 75300, loss: 0.009308
+Total Loss: 0.90376189, Acc: 0.86670000
+epoch: 75400, loss: 0.0004336
+Total Loss: 0.81522605, Acc: 0.87460000
+epoch: 75500, loss: 0.04297
+Total Loss: 0.84701755, Acc: 0.87540000
+epoch: 75600, loss: 9.179e-06
+Total Loss: 0.85042167, Acc: 0.87800000
+epoch: 75700, loss: 4.649e-05
+Total Loss: 0.85741221, Acc: 0.88030000
+epoch: 75800, loss: 0.0007365
+Total Loss: 0.87353754, Acc: 0.87960000
+epoch: 75900, loss: 7.033e-05
+Total Loss: 0.96149033, Acc: 0.87240000
+epoch: 76000, loss: 0.005546
+Total Loss: 0.85751379, Acc: 0.85260000
+epoch: 76100, loss: 0.002025
+Total Loss: 0.84558204, Acc: 0.86670000
+epoch: 76200, loss: 0.003023
+Total Loss: 0.78514203, Acc: 0.87420000
+epoch: 76300, loss: 0.0005713
+Total Loss: 0.81731452, Acc: 0.87600000
+epoch: 76400, loss: 0.02586
+Total Loss: 0.81859078, Acc: 0.87380000
+epoch: 76500, loss: 0.01105
+Total Loss: 0.83073524, Acc: 0.87780000
+epoch: 76600, loss: 0.0003286
+Total Loss: 0.81783526, Acc: 0.87320000
+epoch: 76700, loss: 0.001496
+Total Loss: 0.81316786, Acc: 0.87780000
+epoch: 76800, loss: 0.0008991
+Total Loss: 0.85065088, Acc: 0.87560000
+epoch: 76900, loss: 9.507e-06
+Total Loss: 0.86086653, Acc: 0.87800000
+epoch: 77000, loss: 3.918e-05
+Total Loss: 0.88075849, Acc: 0.87770000
+epoch: 77100, loss: 0.0001314
+Total Loss: 0.89260911, Acc: 0.87670000
+epoch: 77200, loss: 0.000246
+Total Loss: 0.87615221, Acc: 0.88090000
+epoch: 77300, loss: 0.000956
+Total Loss: 0.92039071, Acc: 0.87770000
+epoch: 77400, loss: 7.734e-06
+Total Loss: 0.92416528, Acc: 0.87700000
+epoch: 77500, loss: 0.0001304
+Total Loss: 0.94085446, Acc: 0.87400000
+epoch: 77600, loss: 0.0003261
+Total Loss: 0.91463711, Acc: 0.88050000
+epoch: 77700, loss: 4.178e-05
+Total Loss: 0.91430776, Acc: 0.87980000
+epoch: 77800, loss: 6.048e-05
+Total Loss: 1.00692738, Acc: 0.87460000
+epoch: 77900, loss: 0.0003129
+Total Loss: 0.94339818, Acc: 0.87940000
+epoch: 78000, loss: 0.0022
+Total Loss: 0.96329728, Acc: 0.86950000
+epoch: 78100, loss: 0.001594
+Total Loss: 0.88647555, Acc: 0.87880000
+epoch: 78200, loss: 0.02187
+Total Loss: 0.91712999, Acc: 0.87740000
+epoch: 78300, loss: 1.788e-06
+Total Loss: 0.94905498, Acc: 0.87890000
+/home/nuo.chen/.conda/envs/torch/lib/python3.7/site-packages/torch/serialization.py:292: UserWarning: Couldn't retrieve source code for container of type DataParallel. It won't be checked for correctness upon loading.
+  "type " + obj.__name__ + ". It won't be checked "
+/home/nuo.chen/.conda/envs/torch/lib/python3.7/site-packages/torch/serialization.py:292: UserWarning: Couldn't retrieve source code for container of type ResNet. It won't be checked for correctness upon loading.
+  "type " + obj.__name__ + ". It won't be checked "
+/home/nuo.chen/.conda/envs/torch/lib/python3.7/site-packages/torch/serialization.py:292: UserWarning: Couldn't retrieve source code for container of type Sequential. It won't be checked for correctness upon loading.
+  "type " + obj.__name__ + ". It won't be checked "
+/home/nuo.chen/.conda/envs/torch/lib/python3.7/site-packages/torch/serialization.py:292: UserWarning: Couldn't retrieve source code for container of type Conv2d. It won't be checked for correctness upon loading.
+  "type " + obj.__name__ + ". It won't be checked "
+/home/nuo.chen/.conda/envs/torch/lib/python3.7/site-packages/torch/serialization.py:292: UserWarning: Couldn't retrieve source code for container of type BatchNorm2d. It won't be checked for correctness upon loading.
+  "type " + obj.__name__ + ". It won't be checked "
+/home/nuo.chen/.conda/envs/torch/lib/python3.7/site-packages/torch/serialization.py:292: UserWarning: Couldn't retrieve source code for container of type ReLU. It won't be checked for correctness upon loading.
+  "type " + obj.__name__ + ". It won't be checked "
+/home/nuo.chen/.conda/envs/torch/lib/python3.7/site-packages/torch/serialization.py:292: UserWarning: Couldn't retrieve source code for container of type ResBlock. It won't be checked for correctness upon loading.
+  "type " + obj.__name__ + ". It won't be checked "
+/home/nuo.chen/.conda/envs/torch/lib/python3.7/site-packages/torch/serialization.py:292: UserWarning: Couldn't retrieve source code for container of type AvgPool2d. It won't be checked for correctness upon loading.
+  "type " + obj.__name__ + ". It won't be checked "
+/home/nuo.chen/.conda/envs/torch/lib/python3.7/site-packages/torch/serialization.py:292: UserWarning: Couldn't retrieve source code for container of type Linear. It won't be checked for correctness upon loading.
+  "type " + obj.__name__ + ". It won't be checked "
+[tensor(927., device='cuda:0'), tensor(949., device='cuda:0'), tensor(824., device='cuda:0'), tensor(754., device='cuda:0'), tensor(869., device='cuda:0'), tensor(821., device='cuda:0'), tensor(903., device='cuda:0'), tensor(899., device='cuda:0'), tensor(922., device='cuda:0'), tensor(921., device='cuda:0')]
+plane : 0.9270000457763672
+car : 0.9490000605583191
+bird : 0.8240000605583191
+cat : 0.7540000081062317
+deer : 0.8690000176429749
+dog : 0.8210000395774841
+frog : 0.9030000567436218
+horse : 0.8990000486373901
+ship : 0.9220000505447388
+truck : 0.921000063419342
+Running Time:22754.38331103325 seconds 
